@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', '編集画面')
+@section('title', 'edit screen')
 
 @section('content')
 
@@ -25,12 +25,12 @@
           @method('put')
 
           <div class="form-group">
-            <label for="body">本文</label>
+            <label for="body">Edit post</label>
             <textarea id="body" class="form-control" name="body">{{ old('body', $post->body) }}</textarea>
           </div>
 
           <div class="text-right">
-            <button type="submit" class="btn btn-primary">編集</button>
+            <button type="submit" class="btn btn-primary">EDIT</button>
           </div>
 
         </form>
