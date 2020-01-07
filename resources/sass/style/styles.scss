@@ -1,0 +1,17 @@
+.name {
+    display: flex;
+    justify-content: space-between;
+    border: 1px red solid;
+}
+
+.text-button {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
