@@ -27,7 +27,6 @@
                   <textarea id="body" class="form-control" name="body">{{ old('body') }}</textarea>
                 </div>
 
-                
                 <div class="text-right">
                   <button type="submit" class="btn btn-primary">Submit post</button>
                 </div>
