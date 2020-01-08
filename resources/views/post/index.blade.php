@@ -59,6 +59,7 @@
             
             <p>{{$post->created_at}}</p>
             <p>{{$post->post}}</p>
+            
             <div class="mt-3 ml-3">
               @if (Auth::check() && $post->likes->contains(function ($user) {
                 return $user->id === Auth::user()->id;
@@ -89,7 +90,8 @@
               <form action="{{ route('comment.store') }}" method="POST">
                 @csrf
                   <div class="comment">
-                    <textarea id="body" class="form-control p-2" name="comment">{{ old('body') }}</textarea>
+                    <input type="hidden" name="post_id" value="{{ $post->id }}">
+                    <textarea id="body" class="form-control p-2" name="comment"></textarea>
                     <div class="button-holder">
                       <button type="submit" class="btn btn-secondary btn-sm button">comment</button>
                     </div>
@@ -102,5 +104,4 @@
         
 
         @endforeach
-    
 @endsection
