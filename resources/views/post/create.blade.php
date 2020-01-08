@@ -1,4 +1,4 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app')
 
 @section('title', '新規投稿')
 
@@ -36,4 +36,4 @@
             </div>
         </div>
     </section>
-@endsection
+@endsection -->
