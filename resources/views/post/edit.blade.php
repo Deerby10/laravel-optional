@@ -25,8 +25,8 @@
           @method('put')
 
           <div class="form-group">
-            <label for="body">Edit post</label>
-            <textarea id="body" class="form-control" name="body">{{ old('body', $post->body) }}</textarea>
+            <label for="post">Edit post</label>
+            <textarea id="post" class="form-control" name="post">{{ old('post', $post->post) }}</textarea>
           </div>
 
           <div class="text-right">

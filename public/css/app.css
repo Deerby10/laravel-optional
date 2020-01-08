@@ -14994,7 +14994,6 @@ a.text-dark:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px red solid;
 }
 
 .text-button {
@@ -15007,5 +15006,23 @@ a.text-dark:focus {
 
 .dropdown-toggle::after {
   display: none;
+}
+
+textarea.post-text {
+  height: 150px;
+}
+
+.comment-section {
+  margin: 2px auto;
+}
+
+.button-holder {
+  width: 100%;
+  height: 2.3rem;
+}
+
+.button-holder .button {
+  margin-top: 5px;
+  float: right;
 }
 

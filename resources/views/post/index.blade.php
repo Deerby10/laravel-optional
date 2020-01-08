@@ -3,7 +3,7 @@
 @section('title', 'Post')
 
 @section('content')
-    <section class="container m-5">
+    
         <div class="row justify-content-center">
             <div class="col-8">
 
@@ -24,7 +24,7 @@
 
                 <div class="form-group">
                   <label for="body">Create Post</label>
-                  <textarea id="body" class="form-control p-5" name="body">{{ old('body') }}</textarea>
+                  <textarea id="body" class="form-control m-3 p-2 post-text" name="body"></textarea>
                 </div>
 
                 <div class="text-right">
@@ -59,22 +59,44 @@
             
             <p>{{$post->created_at}}</p>
             <p>{{$post->post}}</p>
-            <p>{{$post->id}}</p>
-
+            
             <div class="mt-3 ml-3">
-
               @if (Auth::check() && $post->likes->contains(function ($user) {
                 return $user->id === Auth::user()->id;
               }))
               
-              <i class="fa fa-thumbs-up fa-lg js-dislike"></i>
+              <i class="fa fa-thumbs-o-up fa-lg js-dislike"></i>
               @else
       
-              <i class="fa fa-thumbs-o-up fa-lg js-like"></i>
+              <i class="fa fa-thumbs-up fa-lg js-like"></i>
               @endif
 
               <input type="hidden" class="post-id" value="{{ $post->id }}">
               <span class="js-like-num">{{ $post->likes->count() }}</span>
+            </div>
+            
+            <p style="font-weight: bold;"> COMMENTS: </p>
+            @foreach ($post->comments as $comment)
+            
+            <div class="m-1 border border-primary">
+              <p style="font-weight: bold;">{{$comment->user->name}}:</p>
+                {{$comment->comment}}
+            </div>
+            @endforeach
+            
+            <div class="comment-section">
+              
+
+              <form action="{{ route('comment.store') }}" method="POST">
+                @csrf
+                  <div class="comment">
+                    <input type="hidden" name="post_id" value="{{ $post->id }}">
+                    <textarea id="body" class="form-control p-2" name="comment"></textarea>
+                    <div class="button-holder">
+                      <button type="submit" class="btn btn-secondary btn-sm button">comment</button>
+                    </div>
+                  </div>
+              </form>
             </div>
         </div>
 
@@ -82,5 +104,4 @@
         
 
         @endforeach
-    </section>
 @endsection

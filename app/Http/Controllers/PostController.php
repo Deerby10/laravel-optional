@@ -15,22 +15,13 @@ class PostController extends Controller
      */
     public function index()
     {
-        $post = Post::with('likes')
+        // show all posts including with likes and comments.
+        $post = Post::with('likes')->with('comments')
             ->orderBy('id', 'desc')->get();
 
         return view('post.index', [
             'post' => $post
         ]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return view('post.create');
     }
 
     /**

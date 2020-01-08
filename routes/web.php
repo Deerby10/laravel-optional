@@ -30,5 +30,7 @@ Route::group(['middleware' => ['auth']], function () {
         ->name('post.like');
     Route::post('/post/{id}/dislike', 'PostController@dislike')
         ->name('post.dislike');
+    
+    Route::post('/comment/store', 'CommentController@store')->name('comment.store');
 
 });
