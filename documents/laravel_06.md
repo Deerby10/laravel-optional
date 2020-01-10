@@ -137,7 +137,7 @@ public function update(Request $request, Post $post, int $id)
     }
 ```
 
-The `updated_at` column set in diaries is updated automatically.  
+The `updated_at` column set in posts is updated automatically.  
 The content of the process is almost the same as a new post.
 
 The different parts are 
