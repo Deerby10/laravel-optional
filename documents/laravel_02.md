@@ -3,7 +3,7 @@
 The first step is to design before coding.
 
 ## Functions list
-- Display diary list
+- Display post list
 - Create or add a post
 - Edit post
 - Delete post
