@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="text-right">
-                  <button type="submit" class="btn btn-primary">Submit post</button>
+                  <button type="submit" class="btn btn-primary">Add post</button>
                 </div>
 
               </form>
