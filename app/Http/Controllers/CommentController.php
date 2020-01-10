@@ -28,11 +28,4 @@ class CommentController extends Controller
 
         return redirect()->route('post.index');
     }
-
-    public function messages()
-    {
-        return [
-            'comment.required' => 'please fill the comment box',
-        ];
-    }
 }
