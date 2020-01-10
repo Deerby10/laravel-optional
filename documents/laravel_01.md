@@ -53,7 +53,7 @@ AppServiceProvider
 <?php
 namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema; // 追加
+use Illuminate\Support\Facades\Schema; // Add
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -63,7 +63,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Schema::defaultStringLength(191); // 追加
+        Schema::defaultStringLength(191); // Add
     }
     /**
      * Register any application services.
