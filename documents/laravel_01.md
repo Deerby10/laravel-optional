@@ -27,6 +27,7 @@ cd ~ /Desktop/Nexseed/Laravel
 ```
 
 Execute the following command in the destination folder to install Laravel via composer. 
+
 `composer create-project laravel / laravel --prefer-dist project-name `
 
 Reference link
@@ -46,7 +47,7 @@ DB_SOCKET = / Applications / XAMPP / xamppfiles / var / mysql / mysql.sock // ad
 ```
 
 ### MySQL version is less than 5.7.7
-AppServiceProviderを編集
+AppServiceProvider
 ```php
 // App/Providers/AppServiceProvider.php
 <?php
