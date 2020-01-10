@@ -362,7 +362,7 @@ Currently the order is ascending ID (first created first).
 If you modify as follows, it will be in descending order of ID.  
 
 ```php
-// app / Http / Controllers / DiaryController
+// app / Http / Controllers / PostController
 public function index ()
 {
     $ post = Post :: orderBy ('id', 'desc')-> get ();
