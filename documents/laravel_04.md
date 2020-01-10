@@ -1,4 +1,4 @@
-# Create  new post function
+# Create  Add post function
 ##  Learn
 In this curriculum, you will learn the following through creating a new posting function:  
 1. Flow from entering a URL from a browser until the screen is displayed (review)
