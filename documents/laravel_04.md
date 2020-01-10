@@ -56,7 +56,6 @@ We will now create a function that will save our data came from the form that we
     }
 ```
 
-After you press the `Add post` button
 ###  Regarding form action
 First, let's talk about form actions.
 It is not possible to enter the URL of the destination page in the form action  
