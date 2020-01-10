@@ -82,7 +82,7 @@ Create a DB.
 DB name must have the same name on what you set in your `.env`.
 
 ## Confirm startup
--Move to project root directory
--Start built-in server with `php artisan serve`
--Access localhost: 8000 from browser
--Check that the laravel TOP page is displayed
+- Move to project root directory 
+- Start built-in server with `php artisan serve`
+- Access localhost: 8000 from browser
+- Check that the laravel TOP page is displayed
