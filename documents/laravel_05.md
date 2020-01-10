@@ -15,7 +15,7 @@ Route :: delete ('post / {id} ', 'PostController @ destroy')-> name ('post.destr
 
 There is one different part.  
 `{id}` of `post / {id} ` can be any value.  
-This time, we assume the id of the diaries table.  
+This time, we assume the id of the posts table.  
 When deleting, you need to identify the record to delete.  
 Include the id of each record in the URL. 
 
