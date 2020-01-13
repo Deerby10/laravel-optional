@@ -41,7 +41,7 @@ public function comment(){
         return $this->hasMany('App\Comment');
     }
 ```
-set it also in the Post model because can have a multiple comments.
+set it also in the Post model because a post can have a multiple comments.
 ```php
 // app / Post
 public function comments(){
