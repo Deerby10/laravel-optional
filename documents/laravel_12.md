@@ -1,7 +1,5 @@
 # Create  Add comment function
 In this curriculum it is just like adding a new post.
-1. 
-2. Table relations (review)
 
 ###  Migration file creation
 First, create new migration file for the comments table
