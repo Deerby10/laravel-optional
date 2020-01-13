@@ -1,4 +1,4 @@
-# Create a nice feature
+# Create a like feature
 
 ## Learning
 Here, through the creation of the like function,  
