@@ -55,7 +55,6 @@ List
 </ a >
 @foreach ($ posts as $ post)
     < div  class = " m-4 p-4 border border-primary " >
-        < p > {{$ post-> title}} </ p >
         < p > {{$ post-> body}} </ p >
         < p > {{$ post-> created_at}} </ p >
         < A  class = " btn btn-success "  href = " {{route ( 'post.Edit', [ 'id' => $ post-> id])}} " > Edit </ a >
