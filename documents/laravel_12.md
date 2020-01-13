@@ -3,6 +3,7 @@ In this curriculum it is just like adding a new post.
 
 ###  Migration file creation
 First, create new migration file for the comments table
+
 Execute the following command.
 ```php
 // Create migration file for comments table
@@ -30,6 +31,13 @@ Edit the `up` method as follows.
 ```php
 php artisan migrate: fresh
 ```
+Explain the reason for `php artisan migrate: fresh` instead of` php artisan migrate` when migrating .    
+When adding a new column, the value of the added column will be `NULL` in the data already saved .  
+However, since `user_id` contains the ID of the user who posted, do not allow NULL.  
+Therefore, if you do `php artisan migrate` normally ,  
+It is an error that the `user_id` column does not allow` NULL` .
+
+`php artisan migrate: fresh` deletes all tables and creates a new one.   
 
 ##  Defining the relationship of Comment, User and Post
 Since a User can have multiple posts and comment, the relationship between the tables is ** one to many ** .  
