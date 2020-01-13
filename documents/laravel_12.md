@@ -71,7 +71,7 @@ Next, create a controller.
 `php artisan make: controller CommentController`
 
 Once the file is created,  
-Let's add an index method to `CommentController` . 
+Let's add an store method to `CommentController` . 
 
 ```php
 // app / Http / Controllers / CommentController
