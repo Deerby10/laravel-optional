@@ -119,15 +119,12 @@ Add a like button below the edit and delete buttons.
    // omitted
 @endif
 <div class = "mt-3 ml-3">
-    <i class = "far fa-heart fa-lg text-danger js-like"> </ i>
+    <i class="fa fa-thumbs-up fa-lg js-like"></i>
     <input class = "post-id" type = "hidden" value = "{{$post-> id}}">
     <span class = "js-like-num"> 200 </ span>
 </ div>
 
 ```
-
-`<i class =" far fa-heart fa-lg text-danger js-like "> </ i>` uses Font Awesome to display the heart icon.  
-* `Text-danger js-like` is a class unrelated to Font Awesome.
 
 ## Like function
 Next, describe the process when the like button is pressed.  
@@ -230,7 +227,7 @@ public function like (int $ id)
 
 This confirms the following:
 1. Data is created in the likes table.  
-2. Like heart symbol is colored
+2. Like symbol turns to white thumbs up.
 3. The number of likes increases.
 
 ### Correct the number of likes displayed
@@ -325,7 +322,7 @@ public function dislike (int $ id)
 
 This confirms the following:
 1. Data is deleted from the likes table.  
-2. The color disappears from the good heart symbol.
+2. Like symbol turns back to its original color which is black.
 3. The number of likes decreases.
 
 ## Button display switching when the list screen is displayed
